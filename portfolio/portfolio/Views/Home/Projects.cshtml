@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+@model IEnumerable<portfolio.Models.Project>
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+<h2>Projects</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Project Name</th>
+        <th>Description</th>
+        <th>Technologies</th>
+    </tr>
+    @foreach (var project in Model)
+    {
+        <tr>
+            <td>@project.ProjectName</td>
+            <td>@project.Description</td>
+            <td>@string.Join(", ", project.Technologies)</td>
+        </tr>
+    }
+</table>
+

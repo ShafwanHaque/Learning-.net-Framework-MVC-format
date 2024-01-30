@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Education";
+}
+
+@model IEnumerable<portfolio.Models.Education>
+<h2>Education Information</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Degree</th>
+        <th>Year</th>
+        <th>Institute</th>
+    </tr>
+    @foreach (var education in Model)
+    {
+        <tr>
+            <td>@education.Degree</td>
+            <td>@education.Year</td>
+            <td>@education.Institute</td>
+        </tr>
+    }
+</table>
+

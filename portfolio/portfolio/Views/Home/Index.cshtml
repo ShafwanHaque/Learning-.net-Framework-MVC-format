@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model portfolio.Models.Profile
+
+<h2>Profile Information</h2>
+<p>Name: @Model.Name</p>
+<p>ID: @Model.ID</p>
+<p>Email: @Model.Email</p>
+<p>Github Profile: <a href="@Model.GitProfile">@Model.GitProfile</a></p>
